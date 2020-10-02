@@ -65,29 +65,7 @@ function Todolist() {
     console.log(newTodo);
   };
 
-  // const editBtnHandler = (items) => {
-  //   let newTodoList = todo.filter((item) => {
-  //     return item.id === items.id;
-  //   });
-
-  //   let input = document.createElement("input");
-  //   input.setAttribute("type", "text");
-  //   input.setAttribute("id", items.id);
-  //   input.setAttribute("value", items.title);
-
-  //   let targetNode = document.getElementById("root");
-  //   targetNode.prepend(input);
-
-  //   let btn = document.getElementById(`${items.id}`);
-  //   let updateBtn = document.createElement("input");
-  //   updateBtn.setAttribute("type", "button");
-  //   // updateBtn.setAttribute("id",items.id);
-  //   updateBtn.setAttribute("value", "Update");
-  //   targetNode.prepend(updateBtn);
-  //   console.log("targetNode", targetNode);
-  // };
-
-  //Styling
+  
   const getStyle = (flag) => {
     return {
       padding: "10px",
@@ -130,19 +108,7 @@ function Todolist() {
           onClick={deleteAllCompletedBtnHandler}
         />
 
-        {/*(Not complete) mark all as completed */}
-        {/* <input
-            type="button"
-            value="markAsAllCompleted"
-            onClick={markAsAllCompletedBtnHandler}
-          /> */}
-
-        {/*(Not complete) mark all as Incompleted */}
-        {/* <input
-          type="button"
-          value="markAsAllInCompleted"
-          onClick={markAsAllInCompletedBtnHandler}
-        /> */}
+        
       </form>
 
       {/* display todo  */}
